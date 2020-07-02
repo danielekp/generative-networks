@@ -2,8 +2,7 @@ skip_training = False
 
 import os
 import numpy as np
-import matplotlib.pyplot as plt
-from IPython import display
+import matplotlib.pyplot as pl
 
 import torch
 import torchvision
@@ -13,7 +12,7 @@ from torchvision import transforms
 import torchvision.utils as utils
 
 
-data_dir = "/home/flim/Documents/DeepLearning/data"
+data_dir = "."
 
 if torch.cuda.is_available() and not skip_training:
     device = torch.device('cuda')
